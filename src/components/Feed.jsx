@@ -30,7 +30,7 @@ const Feed = () => {
             setSelectedCategory= { setSelectedCategory } />
 
             <Typography className="copyright" variant="body2" sx={{mt: 1.5, color: '#fff'}}>
-            Copyright 2023 Hemang B.
+            Copyright 2023 Harit Dheer.
             </Typography>
       </Box>
 

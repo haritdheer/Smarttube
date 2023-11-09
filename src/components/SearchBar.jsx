@@ -17,6 +17,8 @@ const SearchBar = () => {
     }
   };
 
+  const isSmallScreen = window.innerWidth <= 600; // Define the screen width threshold
+
   return (
     <Paper
       component="form"
@@ -37,7 +39,10 @@ const SearchBar = () => {
       />
       <IconButton
         type="submit"
-        sx={{ p: "10px", color: "red" }}
+        sx={{
+          p: isSmallScreen ? "1px" : "10px", // Adjust the size for small screens
+          color: "red",
+        }}
         aria-label="search"
       >
         <SearchIcon />
